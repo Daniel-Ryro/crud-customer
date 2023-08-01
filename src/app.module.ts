@@ -14,12 +14,12 @@ import { ProducerRuralService } from './service/producer-rural.service';
       username: 'postgres',
       password: 'appdata29',
       database: 'db_agro',
-      entities: [ProducerRural], // Adicione a entidade aqui
+      entities: [ProducerRural], 
       synchronize: true,
     }),
-    TypeOrmModule.forFeature([ProducerRural]), // Adicione se você estiver usando algum repositório específico
+    TypeOrmModule.forFeature([ProducerRural]), 
   ],
-  controllers: [ProducerRuralController], // Adicione o ProducerRuralController (e outros controladores, se houver)
-  providers: [ProducerRuralService], // Adicione o ProducerRuralService (e outros serviços, se houver)
+  controllers: [ProducerRuralController], 
+  providers: [ProducerRuralService], 
 })
 export class AppModule {}
